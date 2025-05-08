@@ -1,0 +1,57 @@
+.carousel { /* Estilos para o container principal do carrossel */
+  max-width: 100%;
+  margin: 0 auto;
+  height: 250px; /* Defina a altura desejada para o carrossel */
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 5%;
+}
+
+.carousel-indicators li {
+  background-color: gray;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: black;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.carousel-caption h3 {
+  color: white;
+  font-size: 1.5em;
+}
+
+.carousel-caption p {
+  color: lightgray;
+}
+
+.carousel-caption p {
+  color: lightgray;
+}
+

@@ -1,17 +1,115 @@
 .App {
+  background-color: #AE8053;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Garante que o App ocupe pelo menos a altura da tela */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: #CA3E77;
+  height: 3.5rem;
+  flex-shrink: 0; /* Evita que o header encolha */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Menu*/
+.offcanvas-link {
+  color: white !important; /* Use !important para garantir a precedência */
 }
+
+/* Se precisar estilizar o estado de hover ou outros estados */
+.offcanvas-link:hover {
+  color: #f8f9fa !important; /* Um branco ligeiramente diferente no hover */
+  text-decoration: none !important; /* Remover sublinhado padrão no hover */
+}
+
+.main{
+  flex-grow: 1; /* Ocupa o espaço restante */
+  font-size: 18px;
+}
+
+.logo {
+  width: 28%;
+  height: auto;
+  border-radius: 100%;
+  padding:2% ;
+}
+
+.pri_image {
+  width: 28%;
+  height: auto;
+  border-radius: 100%;
+  padding:2% ;
+ }
+
+main .textoSobre{
+  color: #3E1F1E;
+  text-align: justify;
+  padding-left: 20px; /* Adiciona 20 pixels de espaço à esquerda */
+  padding-right: 20px; /* Adiciona 20 pixels de espaço à direita */
+}
+
+.icon {
+  width: 60px; /* Tamanho do ícone */
+  height: auto;
+  margin-bottom: 10px;
+}
+ 
+.icon-description-grid {
+  display: flex; /* Ativa o Flexbox para o container */
+  flex-direction: row; /* Disposição dos itens em linha */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  justify-content: space-around; /* Espaço igual entre os pares */
+  padding: 20px; /* Adiciona um pouco de espaço ao redor do grid */
+}
+
+.icon-description-item {
+  width: calc(50% - 20px); /* Define a largura para que caibam dois por linha (com um pouco de margem) */
+  display: flex; /* Flexbox para o ícone e a descrição dentro do item */
+  flex-direction: column; /* Ícone acima da descrição */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 20px; /* Espaço entre as linhas de itens */
+  font-size: 90%;
+}
+
+.description {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 0; /* Remove a margem inferior */
+}
+
+.form{
+  padding:4%;
+  text-align: left;
+}
+
+.footer {
+  background-color: #CA3E77;
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  text-align: center;
+  flex-shrink: 0; /* Evita que o footer encolha */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: center;
+}
+
+.footer div a {
+  display: inline-block; /* Faz o link ocupar apenas o tamanho da imagem */
+}
+
+.instagram{
+  height: 2.5rem;
+  padding:3%;
+}
+
+.whatsapp{
+  height: 2.5rem;
+  padding:3% ;
+}
+
+ /*
 
 .App-header {
   background-color: #282c34;
@@ -27,12 +125,4 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+*/

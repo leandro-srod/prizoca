@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# PRIZOCA - Feitos à Mão ✨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição do Projeto
 
-## Available Scripts
+Este é o website inicial da marca PRIZOCA - Feitos à mão. 
+PRIZOCA tem o objetivo de oferecer peças únicas e personalizadas, que carregam a essência do trabalho artesanal. 
+Através desta plataforma, os clientes podem descobrir a estética do trabalho e conhecer uma variedade de itens exclusivos, tais como bolsas, carteiras, necessaires, dentre outros. 
 
-In the project directory, you can run:
+## Tecnologias Utilizadas
 
-### `npm start`
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **React:** Uma biblioteca JavaScript para construir interfaces de usuário dinâmicas e interativas.
+* **React Bootstrap:** Uma biblioteca de componentes de interface do usuário construída sobre o Bootstrap, facilitando a criação de layouts responsivos e estilos consistentes.
+* **JavaScript (ES6+):** A linguagem de programação principal para a lógica da aplicação.
+* **CSS:** Para a estilização geral da aplicação e customização dos componentes do React Bootstrap.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Estrutura de Pastas
+prizoca/
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+├── node_modules/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+|   ├── logo.png
+|   ├── manifest.json
+|   └── robots.txt
+└── src/
+├── __tests __/
+│   └── setupTests.js
+├── components/
+│   ├── Menu/
+│   │   └── Menu.js (Componente do menu de navegação)
+│   ├── Form/
+│   │   └── Form.js (Componente do formulário de contato/encomenda)
+│   ├── LightWidgetEmbed/
+│   │   └── LightWidgetEmbed.js (Componente para incorporar o Widget Instagram)
+│   ├── Carousel/
+│   │   ├── BootstrapSlider.js (Implementação do carrossel)
+│   │   └── CarouselStyles.css (Estilos do carrossel)
+├── images/
+│   └── (Imagens para o Carrossel, Main, Header, Footer)
+├── index.js (Ponto de entrada da aplicação)
+├── reportWebVitals.js (Relatório de métricas de performance)
+└── setupTests.js (Configuração para testes)
 
-### `npm test`
+## Como Executar o Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Siga estas etapas para executar o projeto localmente:
 
-### `npm run build`
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://docs.github.com/articles/referencing-and-citing-content](https://docs.github.com/articles/referencing-and-citing-content)
+    cd prizoca
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm start
+    # ou
+    yarn start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Isso iniciará a aplicação no seu navegador, geralmente em `http://localhost:3000`.
 
-### `npm run eject`
+## Funcionalidades Principais
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* **Navegação:** Menu intuitivo para explorar as diferentes seções.
+* **Formulário de Encomenda:** Permite aos clientes entrar em contato e fazer pedidos personalizados.
+* **Integração com Redes Sociais:** Links diretos para as páginas do Instagram e WhatsApp da PRIZOCA.
+* **Carrossel de Imagens:** Apresentação dinâmica de produtos ou destaques / Exibição visual dos produtos feitos à mão.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Próximos Passos e Melhorias Futuras
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Implementação de um sistema de carrinho de compras.
+* Integração com métodos de pagamento online.
+* Página de detalhes do produto com informações mais completas.
+* Sistema de gerenciamento de estoque (backend).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Autores
 
-## Learn More
+* Leandro da Silva Rodrigues
+https://www.linkedin.com/in/leandro-rodrigues-ti/
+https://github.com/leandro-srod
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Licença
+Copyright © 2025 PRIZOCA - Todos os direitos reservados.
