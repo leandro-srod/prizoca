@@ -25,16 +25,38 @@ import whatsapp from './images/whatsapp.png';
 import instagram from './images/instagram.png';
 import './App.css';
 
-
 function Header({ formRef }) { // Recebe a prop formRef
+  const handleEncomendaClick = (event) => {
+    event.preventDefault(); // Impede a rolagem padrão do link
+    if (formRef && formRef.current) {
+      formRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
-    <header className="header py-3 position-relative d-flex align-items-center">
+    <header className="header">
+      {/* Header Cellphone */}
+
       {/* Menu à esquerda */}
-      <div style={{ marginLeft: '20px' }}><Menu formRef={formRef} /></div> {/* Passa a prop formRef para Menu */}
+      <div className="menu-cellphone" ><Menu formRef={formRef} /></div> {/* Passa a prop formRef para Menu */}
       {/* Nome da marca centralizado */}
-      <h1 className="m-0" style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }}>
+      <h1 className="prizoca_header">
         PRIZOCA
       </h1>
+
+       {/* Header Tablet */}
+      <nav className="nav-links-tablet">
+        <a href="https://www.instagram.com/prizoca_feitos_a_mao/" className="link-tablet">Instagram</a>
+        <a href="https://wa.me/5551986483772?text=Olá!Vi seus produtos e gostaria de maiores informações!" target="_blank" rel="noopener noreferrer" className="link-tablet">WhatsApp</a>
+         <a
+            href="faca-sua-encomenda"
+            className="link-tablet"
+            onClick={handleEncomendaClick}
+          >
+            Faça sua encomenda
+          </a>
+      </nav>
+      
     </header>
   );
 }
@@ -53,7 +75,7 @@ function App() {
         <img src={pri_image} alt="Priscila" className="pri_image" />
         <img src={logo} alt="Logotipo_Prizoca" className="logo" />
 
-        <h2>Bem-vindo à Prizoca!</h2>
+        <p className="slogan">Bem-vindo à Prizoca!</p>
         <p className="textoSobre" >Aqui, cada peça é feita à mão, com carinho, propósito e aquele toque único que só quem acredita no poder do artesanal entende. A gente acredita que o que é verdadeiro leva tempo — e é exatamente isso que você encontra por aqui: criações pensadas para quem valoriza o que é feito com alma e respeito à natureza.</p>
         <p className="textoSobre" >Na Prizoca, a sustentabilidade não é moda, é compromisso. Escolhemos caminhos mais conscientes porque sabemos que o futuro é feito das escolhas de hoje. E a nossa escolha é fazer diferente, fazer bonito e fazer com amor.
           Seja para se presentear ou para espalhar esse sentimento mundo afora, você está no lugar certo. </p>
@@ -79,10 +101,11 @@ function App() {
             <p className="description">Crie sua peça</p>
           </div>
         </div>
-        <p><strong>Sinta-se em casa. Sinta-se Prizoca.<br></br></strong></p>
+
+        <p className="slogan">Sinta-se em casa. Sinta-se Prizoca.</p>
 
         <div ref={formRef} className="form">
-          <h2 align="left">Vamos criar sua peça?</h2>
+          <h3 align="left">Vamos criar sua peça?</h3>
           <h5 align="left">Preencha o formulário abaixo que entraremos em contato</h5>
           <Formulario /> {/* Renderiza o formulário diretamente aqui */}
         </div>
@@ -92,6 +115,7 @@ function App() {
       </main>
 
       <footer className='footer'>
+        {/*Footer Cellphone  */}
         <div>
           <a href="https://wa.me/5551986483772?text=Olá!Vi seus produtos e gostaria de maiores informações!" target="_blank" rel="noopener noreferrer">
             <img src={whatsapp} alt="WhatsApp" className="whatsapp" /></a></div>
@@ -99,6 +123,13 @@ function App() {
         <div>
           <a href="https://www.instagram.com/prizoca_feitos_a_mao/" target="_blank" rel="noopener noreferrer">
             <img src={instagram} alt="Instagram" className="instagram" /></a></div>
+
+             {/*Footer Tablet  */}
+             <div className="footer-tablet">
+             <div>PRIZOCA - Feitos à mão  |  CNPJ - 38.313.620/0001-53</div>
+             <div>Desenvolvido por <a href="https://www.linkedin.com/in/leandro-rodrigues-ti/" target="_blank" rel="noopener noreferrer" className="link-tablet">Leandro Rodrigues</a></div>
+             <div>Copyright © 2025 PRIZOCA - Todos os direitos reservados.</div>
+             </div>
       </footer>
 
     </div>

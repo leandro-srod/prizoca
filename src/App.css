@@ -1,3 +1,7 @@
+/* Estilos mobile-first - cellphone */
+
+@media (max-width: 575px) {
+
 .App {
   background-color: #AE8053;
   text-align: center;
@@ -6,13 +10,37 @@
   min-height: 100%; /* Garante que o App ocupe pelo menos a altura da tela */
 }
 
+.main{
+  flex-grow: 1; /* Ocupa o espaço restante */
+   margin-top: 0; /* Garante que não haja margem superior extra */
+}
+
 .header {
   background-color: #CA3E77;
   height: 3.5rem;
   flex-shrink: 0; /* Evita que o header encolha */
+  position: relative ;
+  display:flex ;
+  align-items: center; 
+}
+
+.prizoca_header{
+position: absolute;
+margin-left:50%;
+transform: translateX(-50%);
+padding-top: 5px;
+}
+
+.nav-links-tablet {
+  display: none; /* Ocultar os links tablet view */
 }
 
 /* Menu*/
+
+.menu-cellphone{
+  margin-left:10px ;
+}
+
 .offcanvas-link {
   color: white !important; /* Use !important para garantir a precedência */
 }
@@ -21,11 +49,6 @@
 .offcanvas-link:hover {
   color: #f8f9fa !important; /* Um branco ligeiramente diferente no hover */
   text-decoration: none !important; /* Remover sublinhado padrão no hover */
-}
-
-.main{
-  flex-grow: 1; /* Ocupa o espaço restante */
-  font-size: 18px;
 }
 
 .logo {
@@ -42,8 +65,9 @@
   padding:2% ;
  }
 
-main .textoSobre{
+.textoSobre{
   color: #3E1F1E;
+   font-size: 16px;
   text-align: justify;
   padding-left: 20px; /* Adiciona 20 pixels de espaço à esquerda */
   padding-right: 20px; /* Adiciona 20 pixels de espaço à direita */
@@ -70,18 +94,26 @@ main .textoSobre{
   align-items: center; /* Centraliza horizontalmente */
   text-align: center; /* Centraliza o texto */
   margin-bottom: 20px; /* Espaço entre as linhas de itens */
-  font-size: 90%;
+  font-size: 100%;
 }
 
 .description {
   font-size: 1em;
-  color: #333;
+  color: #3E1F1E;
   margin-bottom: 0; /* Remove a margem inferior */
+}
+
+.slogan{
+  font-size: 16px;
+  font-weight: bold;
+  color: #3E1F1E;
+  text-align: center;
 }
 
 .form{
   padding:4%;
   text-align: left;
+  color: #3E1F1E;
 }
 
 .footer {
@@ -101,13 +133,174 @@ main .textoSobre{
 
 .instagram{
   height: 2.5rem;
-  padding:3%;
+  padding:5%;
 }
 
 .whatsapp{
   height: 2.5rem;
-  padding:3% ;
+  padding:5% ;
 }
+
+.footer-tablet {
+  display: none;
+}
+}
+
+/* Estilos para telas de tablet (de 576px até 990px de largura) -------------------------------------------------------------- */
+
+@media (min-width: 576px) and (max-width: 990px) {
+
+.App {
+  background-color: #AE8053;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Garante que o App ocupe pelo menos a altura da tela */
+   scroll-padding-top: 6rem;
+}
+
+.main{
+  flex-grow: 1; /* Ocupa o espaço restante */
+   margin-top: 0; /* Garante que não haja margem superior extra */
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color:#CA3E77;
+  padding: 20px 20px; 
+  padding-right: 40px; /* Adiciona 20 pixels de espaço à direita */
+  padding-left: 30px; /* Adiciona 20 pixels de espaço à direita */
+  display: flex; /* Habilita o Flexbox para alinhar os itens */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+
+}
+ 
+.nav-links-tablet {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end; /* Alinhar os links à direita */
+  align-items: center; /* Alinhar os links verticalmente ao centro */
+  margin-left: auto; /* Manter os links à direita do logo */  
+  font-size: 20px;
+}
+
+.prizoca_header{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.menu-cellphone{
+  display: none; /* Ocultar o menu em tablet */
+}
+
+.link-tablet {
+  color: white !important; /* Use !important para garantir a precedência */
+  text-decoration:none !important;
+}
+
+.link-tablet:hover {
+  color: #f8f9fa !important; /* Um branco ligeiramente diferente no hover */
+  text-decoration:none !important; /* Remover sublinhado padrão no hover */
+}
+
+.main{
+  flex-grow: 1; /* Ocupa o espaço restante */
+   margin-top: 0; /* Garante que não haja margem superior extra */
+}
+
+.logo {
+  width: 28%;
+  height: auto;
+  border-radius: 100%;
+  padding:2% ;
+}
+
+.pri_image {
+  width: 28%;
+  height: auto;
+  border-radius: 100%;
+  padding:2% ;
+ }
+
+.textoSobre{
+  font-size: 20px;
+  color: #3E1F1E;
+  text-align: justify;
+  padding-left: 30px; 
+  padding-right: 30px; 
+}
+
+.icon {
+  width: 120px; /* Tamanho do ícone */
+  height: auto;
+  margin-bottom: 10px;
+}
+ 
+.icon-description-grid {
+  display: flex; /* Ativa o Flexbox para o container */
+  flex-direction: row; /* Disposição dos itens em linha */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  justify-content: space-around; /* Espaço igual entre os pares */
+  padding: 20px; /* Adiciona um pouco de espaço ao redor do grid */
+}
+
+.icon-description-item {
+  width: calc(50% - 20px); /* Define a largura para que caibam dois por linha (com um pouco de margem) */
+  display: flex; /* Flexbox para o ícone e a descrição dentro do item */
+  flex-direction: column; /* Ícone acima da descrição */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 20px; /* Espaço entre as linhas de itens */
+ font-size: 100%;
+}
+
+.description {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 0; /* Remove a margem inferior */
+}
+
+.slogan{
+  font-size: 25px;
+  font-weight: bold;
+  color: #3E1F1E;
+  text-align: center;
+  padding: 10px;
+}
+
+.form{
+  padding-left:8%;
+  padding-right:8%;
+  padding-bottom:4%;
+  text-align: left;
+   color: #3E1F1E;
+}
+
+ .instagram{
+  display: none;
+}
+
+.whatsapp{
+ display: none;
+}
+
+.footer-tablet {
+  background-color: #CA3E77;
+  width: 100%;
+  display: block;
+  text-align: center;
+  flex-shrink: 0; /* Evita que o footer encolha */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: center;
+  padding: 10px;
+}
+
+}
+
 
  /*
 

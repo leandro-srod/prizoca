@@ -16,36 +16,36 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 * **CSS:** Para a estilização geral da aplicação e customização dos componentes do React Bootstrap.
 
 ## Estrutura de Pastas
-prizoca/
-├── .gitignore
-├── package-lock.json
-├── package.json
-├── README.md
-├── node_modules/
-├── public/
-│   ├── favicon.ico
-│   ├── index.html
-|   ├── logo.png
-|   ├── manifest.json
-|   └── robots.txt
-└── src/
-├── __tests __/
-│   └── setupTests.js
-├── components/
-│   ├── Menu/
-│   │   └── Menu.js (Componente do menu de navegação)
-│   ├── Form/
-│   │   └── Form.js (Componente do formulário de contato/encomenda)
-│   ├── LightWidgetEmbed/
-│   │   └── LightWidgetEmbed.js (Componente para incorporar o Widget Instagram)
-│   ├── Carousel/
-│   │   ├── BootstrapSlider.js (Implementação do carrossel)
-│   │   └── CarouselStyles.css (Estilos do carrossel)
-├── images/
-│   └── (Imagens para o Carrossel, Main, Header, Footer)
-├── index.js (Ponto de entrada da aplicação)
-├── reportWebVitals.js (Relatório de métricas de performance)
-└── setupTests.js (Configuração para testes)
+* prizoca/
+* ├── .gitignore
+* ├── package-lock.json
+* ├── package.json
+* ├── README.md
+* ├── node_modules/
+* ├── public/
+* │   ├── favicon.ico
+* │   ├── index.html
+* |   ├── logo.png
+* |   ├── manifest.json
+* |   └── robots.txt
+* └── src/
+* ├── __tests __/
+* │   └── setupTests.js
+* ├── components/
+* │   ├── Menu/
+* │   │   └── Menu.js (Componente do menu de navegação)
+* │   ├── Form/
+* │   │   └── Form.js (Componente do formulário de contato/encomenda)
+* │   ├── LightWidgetEmbed/
+* │   │   └── LightWidgetEmbed.js (Componente para incorporar o Widget Instagram)
+* │   ├── Carousel/
+* │   │   ├── BootstrapSlider.js (Implementação do carrossel)
+* │   │   └── CarouselStyles.css (Estilos do carrossel)
+* ├── images/
+* │   └── (Imagens para o Carrossel, Main, Header, Footer)
+* ├── index.js (Ponto de entrada da aplicação)
+* ├── reportWebVitals.js (Relatório de métricas de performance)
+* └── setupTests.js (Configuração para testes)
 
 ## Como Executar o Projeto
 
@@ -53,7 +53,7 @@ Siga estas etapas para executar o projeto localmente:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://docs.github.com/articles/referencing-and-citing-content](https://docs.github.com/articles/referencing-and-citing-content)
+    git clone (https://docs.github.com/articles/referencing-and-citing-content)
     cd prizoca
     ```
 
@@ -87,11 +87,11 @@ Siga estas etapas para executar o projeto localmente:
 * Página de detalhes do produto com informações mais completas.
 * Sistema de gerenciamento de estoque (backend).
 
-## Autores
+## Autor
 
 * Leandro da Silva Rodrigues
-https://www.linkedin.com/in/leandro-rodrigues-ti/
-https://github.com/leandro-srod
+* https://www.linkedin.com/in/leandro-rodrigues-ti/
+* https://github.com/leandro-srod
 
 ## Licença
 Copyright © 2025 PRIZOCA - Todos os direitos reservados.
