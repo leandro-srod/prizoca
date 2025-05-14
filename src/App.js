@@ -37,16 +37,15 @@ function Header({ formRef }) { // Recebe a prop formRef
     <header className="header">
       {/* Header Cellphone */}
 
-      {/* Menu à esquerda */}
       <div className="menu-cellphone" ><Menu formRef={formRef} /></div> {/* Passa a prop formRef para Menu */}
-      {/* Nome da marca centralizado */}
+      
       <h1 className="prizoca_header">
         PRIZOCA
       </h1>
 
        {/* Header Tablet */}
       <nav className="nav-links-tablet">
-        <a href="https://www.instagram.com/prizoca_feitos_a_mao/" className="link-tablet">Instagram</a>
+        <a href="https://www.instagram.com/prizoca_feitos_a_mao/" target="_blank" rel="noopener noreferrer" className="link-tablet">Instagram </a>
         <a href="https://wa.me/5551986483772?text=Olá!Vi seus produtos e gostaria de maiores informações!" target="_blank" rel="noopener noreferrer" className="link-tablet">WhatsApp</a>
          <a
             href="faca-sua-encomenda"
@@ -67,15 +66,18 @@ function App() {
 
   return (
     <div className="App">
-       <Header formRef={formRef} /> {/* Passa a ref para o Header */}
 
+       <Header formRef={formRef} /> {/* Passa a ref para o Header */}
+    
       <main className="main">
-        <BootstrapSlider images={images} />
+
+        <BootstrapSlider images={images} className="carousel" />
 
         <img src={pri_image} alt="Priscila" className="pri_image" />
         <img src={logo} alt="Logotipo_Prizoca" className="logo" />
 
         <p className="slogan">Bem-vindo à Prizoca!</p>
+
         <p className="textoSobre" >Aqui, cada peça é feita à mão, com carinho, propósito e aquele toque único que só quem acredita no poder do artesanal entende. A gente acredita que o que é verdadeiro leva tempo — e é exatamente isso que você encontra por aqui: criações pensadas para quem valoriza o que é feito com alma e respeito à natureza.</p>
         <p className="textoSobre" >Na Prizoca, a sustentabilidade não é moda, é compromisso. Escolhemos caminhos mais conscientes porque sabemos que o futuro é feito das escolhas de hoje. E a nossa escolha é fazer diferente, fazer bonito e fazer com amor.
           Seja para se presentear ou para espalhar esse sentimento mundo afora, você está no lugar certo. </p>

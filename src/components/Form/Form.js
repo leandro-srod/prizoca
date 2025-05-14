@@ -36,8 +36,8 @@ function Formulario({id}) {
 
   return (
     <Form onSubmit={handleSubmit} id={id}>
+   
       <Form.Group className="mb-3" controlId="formNome">
-        
         <Form.Label>Nome:</Form.Label>
         <Form.Control type="text" placeholder="Insira seu nome" />
         <Form.Text className="text-muted">
@@ -70,7 +70,7 @@ function Formulario({id}) {
         ))}
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formMensagem"> {/* Alterei o controlId para algo mais descritivo */}
+      <Form.Group className="mb-3" controlId="formMensagem">
         <Form.Label>Mensagem:</Form.Label>
         <Form.Control
           as="textarea" // Define o componente como um <textarea>
