@@ -35,7 +35,7 @@ function Header({ formRef }) { // Recebe a prop formRef
   
   return (
     <header className="header">
-      {/* Header Cellphone */}
+      {/* Header Smartphone */}
 
       <div className="menu-cellphone" ><Menu formRef={formRef} /></div> {/* Passa a prop formRef para Menu */}
       
@@ -43,7 +43,7 @@ function Header({ formRef }) { // Recebe a prop formRef
         PRIZOCA
       </h1>
 
-       {/* Header Tablet */}
+       {/* Header Tablet / Desktop */}
       <nav className="nav-links-tablet">
         <a href="https://www.instagram.com/prizoca_feitos_a_mao/" target="_blank" rel="noopener noreferrer" className="link-tablet">Instagram </a>
         <a href="https://wa.me/5551986483772?text=Olá!Vi seus produtos e gostaria de maiores informações!" target="_blank" rel="noopener noreferrer" className="link-tablet">WhatsApp</a>
@@ -62,8 +62,39 @@ function Header({ formRef }) { // Recebe a prop formRef
 
 function App() {
   const formRef = useRef(null);
-  const images = [image1, image2, image3, image4, image5, image6];
-
+   const slidesData = [
+    {
+      imageUrl: image1,
+      title: 'Leve com você',
+      description: 'Praticidade que floresce no dia a dia'
+    },
+    {
+      imageUrl: image2,
+      title: 'Feito com carinho',
+      description: 'Cada ponto carrega cuidado e cor'
+    },
+    {
+      imageUrl: image3,
+      title: 'Beleza útil',
+      description: 'Encanto que acompanha sua rotina com leveza'
+    },
+     {
+      imageUrl: image4,
+      title: 'Amor à primeira vista',
+      description: 'Acessórios leves, feitos com o coração'
+    },
+     {
+      imageUrl: image5,
+      title: 'Flor de bolso',
+      description: 'Detalhes que cabem na palma da mão e enchem de alegria'
+    },
+     {
+      imageUrl: image6,
+      title: 'Tudo no seu lugar',
+      description: 'Organizar também pode ser encantador'
+    },
+  ];
+  
   return (
     <div className="App">
 
@@ -71,7 +102,7 @@ function App() {
     
       <main className="main">
 
-        <BootstrapSlider images={images} className="carousel" />
+        <BootstrapSlider slides={slidesData} interval={0.5} className="carousel" />
 
         <img src={pri_image} alt="Priscila" className="pri_image" />
         <img src={logo} alt="Logotipo_Prizoca" className="logo" />
@@ -116,8 +147,8 @@ function App() {
 
       </main>
 
-      <footer className='footer'>
-        {/*Footer Cellphone  */}
+      <footer className="footer">
+        {/*Footer Smartphone  */}
         <div>
           <a href="https://wa.me/5551986483772?text=Olá!Vi seus produtos e gostaria de maiores informações!" target="_blank" rel="noopener noreferrer">
             <img src={whatsapp} alt="WhatsApp" className="whatsapp" /></a></div>
@@ -126,8 +157,8 @@ function App() {
           <a href="https://www.instagram.com/prizoca_feitos_a_mao/" target="_blank" rel="noopener noreferrer">
             <img src={instagram} alt="Instagram" className="instagram" /></a></div>
 
-             {/*Footer Tablet  */}
-             <div className="footer-tablet">
+             {/*Footer Tablet / Desktop  */}
+             <div className="footer-tablet-desktop">
              <div>PRIZOCA - Feitos à mão  |  CNPJ - 38.313.620/0001-53</div>
              <div>Desenvolvido por <a href="https://www.linkedin.com/in/leandro-rodrigues-ti/" target="_blank" rel="noopener noreferrer" className="link-tablet">Leandro Rodrigues</a></div>
              <div>Copyright © 2025 PRIZOCA - Todos os direitos reservados.</div>

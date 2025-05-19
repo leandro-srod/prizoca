@@ -1,0 +1,35 @@
+/* Estilos mobile-first - Smartphone */
+
+.button {
+  background-color: #3DBAC2 !important; /* Cor de fundo principal */
+  border-color: #3DBAC2 !important; /* Cor da borda principal */
+  color: white;
+  border-radius: 5px; /* Opcional */
+  font-size: 1.2rem;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out; /* Transição suave */
+}
+
+.button:hover {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra sutil */
+  background-color: #3DBAC2 !important; /* Tom mais escuro no hover (opcional) */
+  border-color: #3DBAC2 !important; /* Cor da borda no hover (opcional) */
+}
+
+.button:active {
+  background-color: #3DBAC2 !important; /* Mantém a cor verde ao clicar */
+  border-color: #3DBAC2 !important; /* Mantém a cor da borda verde ao clicar */
+  transform: scale(0.90); /* Diminui um pouco o tamanho ao pressionar */
+  
+}
+
+.button:disabled {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+ 
+
+
+

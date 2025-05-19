@@ -25,8 +25,19 @@
 .carousel-control-prev,
 .carousel-control-next {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 5%;
+  width: 7%;
 }
+
+/* Para mudar a cor do ícone de "anterior" no hover */
+.carousel-control-prev:hover .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23CA3E77' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+}
+
+/* Para mudar a cor do ícone de "próximo" no hover */
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23CA3E77' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
 
 .carousel-indicators li {
   background-color: gray;
@@ -37,7 +48,7 @@
 }
 
 .carousel-indicators .active {
-  background-color: black;
+  background-color: #CA3E77;
 }
 
 .carousel-caption {
@@ -45,6 +56,10 @@
   padding: 15px;
   border-radius: 5px;
 }
+
+.carousel-caption {
+    display: none;
+  }
 
 .carousel-caption h3 {
   color: white;
@@ -63,7 +78,7 @@
 
 /* Estilos para telas de tablet (de 576px até 990px de largura) -------------------------------------------------------------- */
 
-@media (min-width: 576px) and (max-width: 990px) {
+@media (min-width: 575px) and (max-width: 990px) {
 
 .carousel { /* Estilos para o container principal do carrossel */
   max-width: 100%;
@@ -91,6 +106,16 @@
   width: 5%;
 }
 
+/* Para mudar a cor do ícone de "anterior" no hover */
+.carousel-control-prev:hover .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23CA3E77' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+}
+
+/* Para mudar a cor do ícone de "próximo" no hover */
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23CA3E77' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
 .carousel-indicators li {
   background-color: gray;
   border-radius: 50%;
@@ -100,11 +125,15 @@
 }
 
 .carousel-indicators .active {
-  background-color: black;
+  background-color: #CA3E77;
 }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 15px;
   border-radius: 5px;
 }
@@ -125,7 +154,7 @@
 
 /* Estilos para telas Desktop (a partir de 991px de largura) -------------------------------------------------------------- */
 
-@media (min-width: 991px) {
+@media (min-width: 990px) {
 
 .carousel { /* Estilos para o container principal do carrossel */
   max-width: 100%;
@@ -150,8 +179,24 @@
 
 .carousel-control-prev,
 .carousel-control-next {
-  
   width: 5%;
+}
+
+.carousel-control-prev .carousel-control-prev-icon,
+.carousel-control-next .carousel-control-next-icon {
+ 
+  background-size: 60px 60px;
+  
+}
+
+/* Para mudar a cor do ícone de "anterior" no hover */
+.carousel-control-prev:hover .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23CA3E77' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+}
+
+/* Para mudar a cor do ícone de "próximo" no hover */
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23CA3E77' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
 }
 
 .carousel-indicators li {
@@ -163,22 +208,24 @@
 }
 
 .carousel-indicators .active {
-  background-color: black;
+  background-color: #CA3E77;
 }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+ 
+  left: 0; /* Alinha a legenda à esquerda */
+  width: 100%; /* Faz a legenda ter 100% da largura do carrossel */
+  height: auto; /* Ajusta a altura automaticamente ao conteúdo */
+  background-color: rgba(0, 0, 0, 0.3); /* Cor de fundo semitransparente */
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 0; /* Remove qualquer arredondamento de borda */
+  text-align: center; /* Centraliza o texto (opcional) */
 }
 
 .carousel-caption h3 {
   color: white;
   font-size: 1.5em;
-}
-
-.carousel-caption p {
-  color: lightgray;
 }
 
 .carousel-caption p {

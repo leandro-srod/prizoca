@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import './Form.css';
 
 function Formulario({id}) {
   const [selectedOptions, setSelectedOptions] = useState([]);
@@ -81,12 +82,7 @@ function Formulario({id}) {
       </Form.Group>
 
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <Button
-          type="submit"
-          style={{ backgroundColor: '#3DBAC2', borderColor: '#3DBAC2' }}
-        >
-          Enviar
-        </Button>
+          <Button className='button' type="submit"> Enviar </Button>
       </div>
     </Form>
   );

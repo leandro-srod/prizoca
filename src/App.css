@@ -1,4 +1,4 @@
-/* Estilos mobile-first - cellphone */
+/* Estilos mobile-first - Smartphone */
 
 @media (max-width: 575px) {
 
@@ -32,24 +32,19 @@ padding-top: 5px;
 }
 
 .nav-links-tablet {
-  display: none; /* Ocultar os links tablet view */
+  display: none; /* Ocultar os links tablet / desktop view */
 }
 
-.desktop_main{
-  display: none;  
-}
-
-/* Menu*/
+/* Menu Smartphone*/
 
 .menu-cellphone{
   margin-left:10px ;
 }
 
 .offcanvas-link {
-  color: white !important; /* Use !important para garantir a precedência */
+  color: white !important;
 }
 
-/* Se precisar estilizar o estado de hover ou outros estados */
 .offcanvas-link:hover {
   color: #f8f9fa !important; /* Um branco ligeiramente diferente no hover */
   text-decoration: none !important; /* Remover sublinhado padrão no hover */
@@ -67,14 +62,14 @@ padding-top: 5px;
   height: auto;
   border-radius: 100%;
   padding:2% ;
- }
+}
 
 .textoSobre{
   color: #3E1F1E;
    font-size: 16px;
   text-align: justify;
-  padding-left: 20px; /* Adiciona 20 pixels de espaço à esquerda */
-  padding-right: 20px; /* Adiciona 20 pixels de espaço à direita */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .icon {
@@ -131,6 +126,10 @@ padding-top: 5px;
   justify-content: center;
 }
 
+.footer-tablet-desktop{
+  display: none;
+}
+
 .footer div a {
   display: inline-block; /* Faz o link ocupar apenas o tamanho da imagem */
 }
@@ -140,19 +139,23 @@ padding-top: 5px;
   padding:5%;
 }
 
+.instagram:active {
+    transform: scale(0.90);
+}
+
 .whatsapp{
   height: 2.5rem;
   padding:5% ;
 }
 
-.footer-tablet {
-  display: none;
+.whatsapp:active {
+    transform: scale(0.90);
 }
 }
 
-/* Estilos para telas de tablet (de 576px até 990px de largura) -------------------------------------------------------------- */
+/* Estilos para telas de tablet (de 575px até 990px de largura) -------------------------------------------------------------- */
 
-@media (min-width: 576px) and (max-width: 990px) {
+@media (min-width: 575px) and (max-width: 990px) {
 
 .App {
   background-color: #AE8053;
@@ -183,10 +186,6 @@ padding-top: 5px;
 
 }
 
-.desktop_main{
-  display: none;  
-}
- 
 .nav-links-tablet {
   display: flex;
   gap: 20px;
@@ -206,13 +205,17 @@ padding-top: 5px;
 }
 
 .link-tablet {
-  color: white !important; /* Use !important para garantir a precedência */
+  color: white !important;
   text-decoration:none !important;
 }
 
 .link-tablet:hover {
-  color: #f8f9fa !important; /* Um branco ligeiramente diferente no hover */
-  text-decoration:none !important; /* Remover sublinhado padrão no hover */
+  color: #3E1F1E !important; 
+  text-decoration:none !important;
+}
+
+.link-tablet:active {
+    transform: scale(0.90);
 }
 
 .main{
@@ -234,7 +237,7 @@ padding-top: 5px;
   padding:2% ;
  }
 
-  .logo_desktop{
+.logo_desktop{
   display: none;
 }
 
@@ -246,8 +249,8 @@ padding-top: 5px;
   font-size: 20px;
   color: #3E1F1E;
   text-align: justify;
-  padding-left: 30px; 
-  padding-right: 30px; 
+   padding-left: 10%; 
+  padding-right: 10%; 
 }
 
 .icon {
@@ -289,8 +292,8 @@ padding-top: 5px;
 }
 
 .form{
-  padding-left:8%;
-  padding-right:8%;
+  padding-left:10%;
+  padding-right:10%;
   padding-bottom:4%;
   text-align: left;
   color: #3E1F1E;
@@ -305,7 +308,7 @@ padding-top: 5px;
  display: none;
 }
 
-.footer-tablet {
+.footer-tablet-desktop {
   background-color: #CA3E77;
   width: 100%;
   display: block;
@@ -319,7 +322,7 @@ padding-top: 5px;
 
 /* Estilos para telas Desktop (a partir de 991px de largura) -------------------------------------------------------------- */
 
-@media (min-width: 991px) {
+@media (min-width: 990px) {
 
 .App {
   background-color: #AE8053;
@@ -349,10 +352,6 @@ padding-top: 5px;
   align-items: center; /* Alinha os itens verticalmente ao centro */
 
 }
-
-.desktop_main{
-  display: none;  
-}
  
 .nav-links-tablet {
   display: flex;
@@ -374,13 +373,17 @@ padding-top: 5px;
 }
 
 .link-tablet {
-  color: white !important; /* Use !important para garantir a precedência */
+  color: white !important;
   text-decoration:none !important;
 }
 
 .link-tablet:hover {
-  color: #3DBAC2  !important; 
-  text-decoration:none !important; /* Remover sublinhado padrão no hover */
+  color: #3E1F1E !important; 
+  text-decoration:none !important;
+}
+
+.link-tablet:active {
+    transform: scale(0.90);
 }
 
 .main{
@@ -453,8 +456,8 @@ padding-top: 5px;
 }
 
 .form{
-  padding-left:8%;
-  padding-right:8%;
+  padding-left:20%;
+  padding-right:20%;
   padding-bottom:4%;
   text-align: left;
   color: #3E1F1E;
@@ -469,7 +472,7 @@ padding-top: 5px;
  display: none;
 }
 
-.footer-tablet {
+.footer-tablet-desktop {
   background-color: #CA3E77;
   width: 100%;
   display: block;
@@ -480,21 +483,3 @@ padding-top: 5px;
   padding: 10px;
 }
 }
-
- /*
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-*/

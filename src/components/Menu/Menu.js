@@ -46,8 +46,8 @@ function Menu({ formRef }) { // Recebe a prop formRef
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="flex-column">
-            <Nav.Link href="https://www.instagram.com/prizoca_feitos_a_mao/" className="offcanvas-link">Instagram</Nav.Link>
-            <Nav.Link href="https://wa.me/5551986483772?text=Olá!Vi seus produtos e gostaria de maiores informações!"target="_blank" rel="noopener noreferrer" className="offcanvas-link">WhatsApp</Nav.Link>
+            <Nav.Link href="https://www.instagram.com/prizoca_feitos_a_mao/" target="_blank" rel="noopener noreferrer" className="offcanvas-link">Instagram</Nav.Link>
+            <Nav.Link href="https://wa.me/5551986483772?text=Olá!Vi seus produtos e gostaria de maiores informações!" target="_blank" rel="noopener noreferrer" className="offcanvas-link">WhatsApp</Nav.Link>
             <Nav.Link onClick={scrollToForm} className="offcanvas-link" style={{ cursor: 'pointer' }}>Faça sua encomenda</Nav.Link>
           </Nav>
         </Offcanvas.Body>

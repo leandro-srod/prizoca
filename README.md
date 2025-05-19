@@ -1,97 +1,98 @@
-# PRIZOCA - Feitos à Mão ✨
+# PRIZOCA - Handmade ✨(PRIZOCA - Feitos à Mão ✨)
 
-## Descrição do Projeto
+## Project Description
 
-Este é o website inicial da marca PRIZOCA - Feitos à mão. 
-PRIZOCA tem o objetivo de oferecer peças únicas e personalizadas, que carregam a essência do trabalho artesanal. 
-Através desta plataforma, os clientes podem descobrir a estética do trabalho e conhecer uma variedade de itens exclusivos, tais como bolsas, carteiras, necessaires, dentre outros. 
+This is the initial website for the brand PRIZOCA - Handmade.
+PRIZOCA aims to offer unique and personalized pieces that carry the essence of artisanal work.
+Through this platform, customers can discover the aesthetic of the work and explore a variety of exclusive items, such as bags, wallets, toiletry bags, among others.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+This project was developed using the following technologies:
 
-* **React:** Uma biblioteca JavaScript para construir interfaces de usuário dinâmicas e interativas.
-* **React Bootstrap:** Uma biblioteca de componentes de interface do usuário construída sobre o Bootstrap, facilitando a criação de layouts responsivos e estilos consistentes.
-* **JavaScript (ES6+):** A linguagem de programação principal para a lógica da aplicação.
-* **CSS:** Para a estilização geral da aplicação e customização dos componentes do React Bootstrap.
+* **React:** A JavaScript library for building dynamic and interactive user interfaces.
+* **React Bootstrap:** A user interface component library built on Bootstrap, facilitating the creation of responsive layouts and consistent styles.
+* **JavaScript (ES6+):** The main programming language for the application logic.
+* **CSS:** For the general styling of the application and customization of React Bootstrap components.
 
-## Estrutura de Pastas
+## Folder Structure
 * prizoca/
 * ├── .gitignore
 * ├── package-lock.json
 * ├── package.json
+* ├── README-pt-br.md
 * ├── README.md
 * ├── node_modules/
 * ├── public/
 * │   ├── favicon.ico
 * │   ├── index.html
-* |   ├── logo.png
-* |   ├── manifest.json
-* |   └── robots.txt
+* │   ├── logo.png
+* │   ├── manifest.json
+* │   └── robots.txt
 * └── src/
-* ├── __tests __/
+* ├── __tests__/
 * │   └── setupTests.js
 * ├── components/
 * │   ├── Menu/
-* │   │   └── Menu.js (Componente do menu de navegação)
+* │   │   └── Menu.js (Navigation menu component)
 * │   ├── Form/
-* │   │   └── Form.js (Componente do formulário de contato/encomenda)
+* │   │   └── Form.js (Contact/order form component)
 * │   ├── LightWidgetEmbed/
-* │   │   └── LightWidgetEmbed.js (Componente para incorporar o Widget Instagram)
+* │   │   └── LightWidgetEmbed.js (Component to embed the Instagram Widget)
 * │   ├── Carousel/
-* │   │   ├── BootstrapSlider.js (Implementação do carrossel)
-* │   │   └── CarouselStyles.css (Estilos do carrossel)
+* │   │   ├── BootstrapSlider.js (Carousel implementation)
+* │   │   └── CarouselStyles.css (Carousel styles)
 * ├── images/
-* │   └── (Imagens para o Carrossel, Main, Header, Footer)
-* ├── index.js (Ponto de entrada da aplicação)
-* ├── reportWebVitals.js (Relatório de métricas de performance)
-* └── setupTests.js (Configuração para testes)
+* │   └── (Images for Carousel, Main, Header, Footer)
+* ├── index.js (Application entry point)
+* ├── reportWebVitals.js (Performance metrics report)
+* └── setupTests.js (Setup for tests)
 
-## Como Executar o Projeto
+## How to Run the Project
 
-Siga estas etapas para executar o projeto localmente:
+Follow these steps to run the project locally:
 
-1.  **Clone o repositório:**
+1.  **Clone the repository:**
     ```bash
-    git clone (https://docs.github.com/articles/referencing-and-citing-content)
+    git clone ([https://docs.github.com/articles/referencing-and-citing-content](https://docs.github.com/articles/referencing-and-citing-content))
     cd prizoca
     ```
 
-2.  **Instale as dependências:**
+2.  **Install dependencies:**
     ```bash
     npm install
-    # ou
+    # or
     yarn install
     ```
 
-3.  **Inicie o servidor de desenvolvimento:**
+3.  **Start the development server:**
     ```bash
     npm start
-    # ou
+    # or
     yarn start
     ```
 
-    Isso iniciará a aplicação no seu navegador, geralmente em `http://localhost:3000`.
+    This will start the application in your browser, usually at `http://localhost:3000`.
 
-## Funcionalidades Principais
+## Main Features
 
-* **Navegação:** Menu intuitivo para explorar as diferentes seções.
-* **Formulário de Encomenda:** Permite aos clientes entrar em contato e fazer pedidos personalizados.
-* **Integração com Redes Sociais:** Links diretos para as páginas do Instagram e WhatsApp da PRIZOCA.
-* **Carrossel de Imagens:** Apresentação dinâmica de produtos ou destaques / Exibição visual dos produtos feitos à mão.
+* **Navigation:** Intuitive menu to explore different sections.
+* **Order Form:** Allows customers to get in touch and place custom orders.
+* **Social Media Integration:** Direct links to PRIZOCA's Instagram and WhatsApp pages.
+* **Image Carousel:** Dynamic presentation of products or highlights / Visual display of handmade products.
 
-## Próximos Passos e Melhorias Futuras
+## Next Steps and Future Improvements
 
-* Implementação de um sistema de carrinho de compras.
-* Integração com métodos de pagamento online.
-* Página de detalhes do produto com informações mais completas.
-* Sistema de gerenciamento de estoque (backend).
+* Implementation of a shopping cart system.
+* Integration with online payment methods.
+* Product details page with more complete information.
+* Inventory management system (backend).
 
-## Autor
+## Author
 
 * Leandro da Silva Rodrigues
 * https://www.linkedin.com/in/leandro-rodrigues-ti/
 * https://github.com/leandro-srod
 
-## Licença
-Copyright © 2025 PRIZOCA - Todos os direitos reservados.
+## License
+Copyright © 2025 PRIZOCA - All rights reserved.
