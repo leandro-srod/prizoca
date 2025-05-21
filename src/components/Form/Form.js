@@ -7,13 +7,12 @@ import emailjs from '@emailjs/browser';
 function Formulario({ id }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState(''); // Armazena apenas os dígitos (valor "limpo")
+  const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
-  const [selectedOptions, setSelectedOptions] = useState([]); // Estado para as opções selecionadas
+  const [selectedOptions, setSelectedOptions] = useState([]);
 
-  const phoneInputRef = useRef(null); // Ref para manipular o input de telefone diretamente
+  const phoneInputRef = useRef(null);
 
-  // Definição das opções para os checkboxes
   const options = [
     { label: 'Bolsa', value: 'Bolsa' },
     { label: 'Carteira', value: 'Carteira' },
@@ -27,7 +26,6 @@ function Formulario({ id }) {
     { label: 'Personalizado', value: 'Personalizado' },
   ];
 
-  // Lógica para adicionar/remover opções dos checkboxes
   const handleCheckboxChange = (event) => {
     const { value, checked } = event.target;
     if (checked) {
@@ -37,13 +35,11 @@ function Formulario({ id }) {
     }
   };
 
-  // Aplica a máscara visualmente no input de telefone (usando a ref)
   function applyPhoneMask(event) {
     const inputElement = event.target;
     let value = inputElement.value;
     let cleanedValue = value.replace(/\D/g, '');
 
-    // Limita para 11 dígitos antes de mascarar
     if (cleanedValue.length > 11) {
       cleanedValue = cleanedValue.substring(0, 11);
     }
@@ -58,24 +54,21 @@ function Formulario({ id }) {
     if (cleanedValue.length > 7) {
       maskedValue = `${maskedValue}-${cleanedValue.substring(7, 11)}`;
     }
-    inputElement.value = maskedValue; // Atualiza o valor do DOM diretamente
+    inputElement.value = maskedValue;
   }
 
-  // Atualiza o estado 'phone' com o valor numérico limpo (para envio)
   function handlePhoneChange(e) {
     let cleanedValue = e.target.value.replace(/\D/g, '');
-    // Limita para 11 dígitos para o valor do estado
+
     if (cleanedValue.length > 11) {
       cleanedValue = cleanedValue.substring(0, 11);
     }
     setPhone(cleanedValue);
   }
 
-  // Função para enviar o formulário
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Validação de todos os campos
     if (name === '' || email === '' || message === '' || phone === '' || selectedOptions.length === 0) {
       alert('Por favor, preencha todos os campos e selecione pelo menos um item.');
       return;
@@ -84,22 +77,21 @@ function Formulario({ id }) {
     const templateParams = {
       from_name: name,
       email: email,
-      phone: phone, // Este 'phone' já está limpo e limitado a 11 dígitos
+      phone: phone,
       message: message,
-      selected_items: selectedOptions.join(', ') // String de itens selecionados
+      selected_items: selectedOptions.join(', ')
     };
 
     emailjs.send("service_vh2puac", "template_xo7y7bg", templateParams, "zurs8oBDFRSW0jgHZ")
       .then((response) => {
         console.log("E-MAIL ENVIADO.", response.status, response.text);
-        // Limpa os campos após o envio
         setName('');
         setEmail('');
         setMessage('');
         setPhone('');
         setSelectedOptions([]);
         if (phoneInputRef.current) {
-          phoneInputRef.current.value = ''; // Limpa o valor visual do input de telefone
+          phoneInputRef.current.value = '';
         }
         alert("Formulário enviado com sucesso. Em breve entraremos em contato.");
       }, (err) => {
@@ -126,9 +118,9 @@ function Formulario({ id }) {
         <Form.Control
           type="tel"
           placeholder="Insira seu telefone (Ex: (51) 99999-9999)"
-          ref={phoneInputRef} // Atribui a ref aqui
-          onKeyUp={applyPhoneMask} // Para a máscara visual
-          onChange={handlePhoneChange} // Para atualizar o estado 'phone' (limpo)
+          ref={phoneInputRef}
+          onKeyUp={applyPhoneMask} 
+          onChange={handlePhoneChange}
         />
       </Form.Group>
 
@@ -151,7 +143,7 @@ function Formulario({ id }) {
             id={`checkbox-${option.value}`}
             label={option.label}
             value={option.value}
-            name="produtos" // Útil se você for agrupar em um `name` comum
+            name="produtos"
             checked={selectedOptions.includes(option.value)}
             onChange={handleCheckboxChange}
           />

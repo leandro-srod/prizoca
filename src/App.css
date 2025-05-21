@@ -7,18 +7,18 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 100%; /* Garante que o App ocupe pelo menos a altura da tela */
+  min-height: 100%;
 }
 
 .main{
-  flex-grow: 1; /* Ocupa o espaço restante */
-   margin-top: 0; /* Garante que não haja margem superior extra */
+  flex-grow: 1;
+   margin-top: 0;
 }
 
 .header {
   background-color: #CA3E77;
   height: 3.5rem;
-  flex-shrink: 0; /* Evita que o header encolha */
+  flex-shrink: 0;
   position: relative ;
   display:flex ;
   align-items: center; 
@@ -32,10 +32,8 @@ padding-top: 5px;
 }
 
 .nav-links-tablet {
-  display: none; /* Ocultar os links tablet / desktop view */
+  display: none;
 }
-
-/* Menu Smartphone*/
 
 .menu-cellphone{
   margin-left:10px ;
@@ -48,7 +46,7 @@ padding-top: 5px;
 .offcanvas-link:active {
   color: #3E1F1E !important;
   transform: scale(0.90);
-  text-decoration: none !important; /* Remover sublinhado padrão no hover */
+  text-decoration: none !important;
 }
 
 .logo {
@@ -80,27 +78,27 @@ padding-top: 5px;
 }
  
 .icon-description-grid {
-  display: flex; /* Ativa o Flexbox para o container */
-  flex-direction: row; /* Disposição dos itens em linha */
-  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-  justify-content: space-around; /* Espaço igual entre os pares */
-  padding: 20px; /* Adiciona um pouco de espaço ao redor do grid */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .icon-description-item {
-  width: calc(50% - 20px); /* Define a largura para que caibam dois por linha (com um pouco de margem) */
-  display: flex; /* Flexbox para o ícone e a descrição dentro do item */
-  flex-direction: column; /* Ícone acima da descrição */
-  align-items: center; /* Centraliza horizontalmente */
-  text-align: center; /* Centraliza o texto */
-  margin-bottom: 20px; /* Espaço entre as linhas de itens */
+  width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
   font-size: 100%;
 }
 
 .description {
   font-size: 1em;
   color: #3E1F1E;
-  margin-bottom: 0; /* Remove a margem inferior */
+  margin-bottom: 0;
 }
 
 .slogan{
@@ -122,8 +120,8 @@ padding-top: 5px;
   height: 3.5rem;
   display: flex;
   text-align: center;
-  flex-shrink: 0; /* Evita que o footer encolha */
-  align-items: center; /* Centraliza os itens verticalmente */
+  flex-shrink: 0;
+  align-items: center;
   justify-content: center;
 }
 
@@ -132,7 +130,7 @@ padding-top: 5px;
 }
 
 .footer div a {
-  display: inline-block; /* Faz o link ocupar apenas o tamanho da imagem */
+  display: inline-block;
 }
 
 .instagram{
@@ -182,17 +180,17 @@ padding-top: 5px;
   padding: 20px 20px; 
   padding-right: 40px; 
   padding-left: 30px;
-  display: flex; /* Habilita o Flexbox para alinhar os itens */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
+  display: flex;
+  align-items: center;
 
 }
 
 .nav-links-tablet {
   display: flex;
   gap: 20px;
-  justify-content: flex-end; /* Alinhar os links à direita */
-  align-items: center; /* Alinhar os links verticalmente ao centro */
-  margin-left: auto; /* Manter os links à direita do logo */  
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
   font-size: 20px;
 }
 
@@ -202,7 +200,7 @@ padding-top: 5px;
 }
 
 .menu-cellphone{
-  display: none; /* Ocultar o menu em tablet */
+  display: none;
 }
 
 .link-tablet {
@@ -220,8 +218,8 @@ padding-top: 5px;
 }
 
 .main{
-  flex-grow: 1; /* Ocupa o espaço restante */
-   margin-top: 0; /* Garante que não haja margem superior extra */
+  flex-grow: 1;
+   margin-top: 0;
 }
 
 .logo {
@@ -255,33 +253,33 @@ padding-top: 5px;
 }
 
 .icon {
-  width: 120px; /* Tamanho do ícone */
+  width: 120px;
   height: auto;
   margin-bottom: 10px;
 }
  
 .icon-description-grid {
-  display: flex; /* Ativa o Flexbox para o container */
-  flex-direction: row; /* Disposição dos itens em linha */
-  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-  justify-content: space-around; /* Espaço igual entre os pares */
-  padding: 20px; /* Adiciona um pouco de espaço ao redor do grid */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .icon-description-item {
-  width: calc(50% - 20px); /* Define a largura para que caibam dois por linha (com um pouco de margem) */
-  display: flex; /* Flexbox para o ícone e a descrição dentro do item */
-  flex-direction: column; /* Ícone acima da descrição */
-  align-items: center; /* Centraliza horizontalmente */
-  text-align: center; /* Centraliza o texto */
-  margin-bottom: 20px; /* Espaço entre as linhas de itens */
+  width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
  font-size: 100%;
 }
 
 .description {
   font-size: 20px;
   color: #333;
-  margin-bottom: 0; /* Remove a margem inferior */
+  margin-bottom: 0;
 }
 
 .slogan{
@@ -314,8 +312,8 @@ padding-top: 5px;
   width: 100%;
   display: block;
   text-align: center;
-  flex-shrink: 0; /* Evita que o footer encolha */
-  align-items: center; /* Centraliza os itens verticalmente */
+  flex-shrink: 0;
+  align-items: center;
   justify-content: center;
   padding: 10px;
 }
@@ -357,9 +355,9 @@ padding-top: 5px;
 .nav-links-tablet {
   display: flex;
   gap: 20px;
-  justify-content: flex-end; /* Alinhar os links à direita */
-  align-items: center; /* Alinhar os links verticalmente ao centro */
-  margin-left: auto; /* Manter os links à direita do logo */  
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
   font-size: 16px;
 }
 
@@ -388,8 +386,8 @@ padding-top: 5px;
 }
 
 .main{
-  flex-grow: 1; /* Ocupa o espaço restante */
-   margin-top: 0; /* Garante que não haja margem superior extra */
+  flex-grow: 1;
+   margin-top: 0;
 }
 
 .logo {
@@ -416,15 +414,15 @@ padding-top: 5px;
 }
 
 .icon {
-  width: 120px; /* Tamanho do ícone */
+  width: 120px;
   height: auto;
   margin-bottom: 10px;
   padding-top: 15px;
 }
  
 .icon-description-grid {
-  display: flex; /* Ativa o Flexbox para o container */
-  flex-direction: row; /* Disposição dos itens em linha */
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -433,18 +431,18 @@ padding-top: 5px;
 }
 
 .icon-description-item {
-  display: flex; /* Flexbox para o ícone e a descrição dentro do item */
-  flex-direction: column; /* Ícone acima da descrição */
-  align-items: center; /* Centraliza horizontalmente */
-  text-align: center; /* Centraliza o texto */
-  margin-bottom: 20px; /* Espaço entre as linhas de itens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
  font-size: 100%;
 }
 
 .description {
   font-size: 20px;
   color: #333;
-  margin-bottom: 0; /* Remove a margem inferior */
+  margin-bottom: 0;
 }
 
 .slogan{
@@ -479,8 +477,8 @@ padding-top: 5px;
   width: 100%;
   display: block;
   text-align: center;
-  flex-shrink: 0; /* Evita que o footer encolha */
-  align-items: center; /* Centraliza os itens verticalmente */
+  flex-shrink: 0;
+  align-items: center;
   justify-content: center;
   padding: 10px;
 }

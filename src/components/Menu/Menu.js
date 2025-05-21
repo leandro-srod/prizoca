@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import menuIcon from '../../images/menuIcon.png';
 import '../../App.css';
 
-function Menu({ formRef }) { // Recebe a prop formRef
+function Menu({ formRef }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -14,15 +14,14 @@ function Menu({ formRef }) { // Recebe a prop formRef
   const scrollToForm = (event) => {
     event.preventDefault();
     event.stopPropagation();
-    handleClose(); // Inicia o fechamento do Offcanvas
-    // Rolagem para o formulário após o Offcanvas começar a fechar
+    handleClose();
     setTimeout(() => {
       if (formRef && formRef.current) {
         formRef.current.scrollIntoView({ behavior: 'smooth' });
       } else {
         console.log("Referência ao formulário não encontrada!");
       }
-    }, 400); // Ajuste de tempo de acordo com a duração da animação de fechamento do Offcanvas
+    }, 400);
   };
 
   return (

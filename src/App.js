@@ -25,9 +25,9 @@ import whatsapp from './images/whatsapp.png';
 import instagram from './images/instagram.png';
 import './App.css';
 
-function Header({ formRef }) { // Recebe a prop formRef
+function Header({ formRef }) {
   const handleEncomendaClick = (event) => {
-    event.preventDefault(); // Impede a rolagem padrão do link
+    event.preventDefault();
     if (formRef && formRef.current) {
       formRef.current.scrollIntoView({ behavior: 'smooth' });
     }
@@ -35,15 +35,13 @@ function Header({ formRef }) { // Recebe a prop formRef
   
   return (
     <header className="header">
-      {/* Header Smartphone */}
 
-      <div className="menu-cellphone" ><Menu formRef={formRef} /></div> {/* Passa a prop formRef para Menu */}
+      <div className="menu-cellphone" ><Menu formRef={formRef} /></div>
       
       <h1 className="prizoca_header">
         PRIZOCA
       </h1>
 
-       {/* Header Tablet / Desktop */}
       <nav className="nav-links-tablet">
         <a href="https://www.instagram.com/prizoca_feitos_a_mao/" target="_blank" rel="noopener noreferrer" className="link-tablet">Instagram </a>
         <a href="https://wa.me/5551986483772?text=Olá!Vi seus produtos e gostaria de maiores informações!" target="_blank" rel="noopener noreferrer" className="link-tablet">WhatsApp</a>
@@ -98,7 +96,7 @@ function App() {
   return (
     <div className="App">
 
-       <Header formRef={formRef} /> {/* Passa a ref para o Header */}
+       <Header formRef={formRef} /> 
     
       <main className="main">
 
@@ -140,15 +138,15 @@ function App() {
         <div ref={formRef} className="form">
           <h3 align="left">Vamos criar sua peça?</h3>
           <h5 align="left">Preencha o formulário abaixo que entraremos em contato</h5>
-          <Formulario /> {/* Renderiza o formulário diretamente aqui */}
+          <Formulario /> 
         </div>
 
-        <LightWidgetComponent /> {/* Widget do Instagram dentro do main */}
+        <LightWidgetComponent /> 
 
       </main>
 
       <footer className="footer">
-        {/*Footer Smartphone  */}
+
         <div>
           <a href="https://wa.me/5551986483772?text=Olá!Vi seus produtos e gostaria de maiores informações!" target="_blank" rel="noopener noreferrer">
             <img src={whatsapp} alt="WhatsApp" className="whatsapp" /></a></div>
@@ -157,7 +155,6 @@ function App() {
           <a href="https://www.instagram.com/prizoca_feitos_a_mao/" target="_blank" rel="noopener noreferrer">
             <img src={instagram} alt="Instagram" className="instagram" /></a></div>
 
-             {/*Footer Tablet / Desktop  */}
              <div className="footer-tablet-desktop">
              <div>PRIZOCA - Feitos à mão  |  CNPJ - 38.313.620/0001-53</div>
              <div>Desenvolvido por <a href="https://www.linkedin.com/in/leandro-rodrigues-ti/" target="_blank" rel="noopener noreferrer" className="link-tablet">Leandro Rodrigues</a></div>

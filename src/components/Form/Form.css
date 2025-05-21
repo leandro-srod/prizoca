@@ -1,17 +1,17 @@
 .button {
-  background-color: #3DBAC2 !important; /* Cor de fundo principal */ 
-  border-color: #3DBAC2 !important; /* Cor da borda principal */
+  background-color: #3DBAC2 !important;
+  border-color: #3DBAC2 !important;
   color: white;
   border-radius: 5px;
   font-size: 1.2rem;
-  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out; /* Transição suave */
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 }
 
 .button:hover {
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra sutil */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
   border-color: #FFFF !important;
 }
 
 .button:active {
-  transform: scale(0.90); /* Diminui um pouco o tamanho ao pressionar */
+  transform: scale(0.90);
 }
