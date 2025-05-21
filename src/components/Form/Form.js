@@ -1,8 +1,8 @@
-import React, { useState, useRef } from 'react'; // Importe useRef
+import React, { useState, useRef } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import './Form.css'; // Mantenha seu CSS personalizado
-import emailjs from '@emailjs/browser'; // Importe emailjs
+import './Form.css';
+import emailjs from '@emailjs/browser';
 
 function Formulario({ id }) {
   const [name, setName] = useState('');
@@ -18,9 +18,9 @@ function Formulario({ id }) {
     { label: 'Bolsa', value: 'Bolsa' },
     { label: 'Carteira', value: 'Carteira' },
     { label: 'Pochete', value: 'Pochete' },
-    { label: 'Porta moeda', value: 'Porta moeda' },
+    { label: 'Estojo', value: 'Estojo' },
     { label: 'Porta óculos', value: 'Porta óculos' },
-    { label: 'Nécessaire', value: 'Necessaire' },
+    { label: 'Necessaire', value: 'Necessaire' },
     { label: 'Mochila', value: 'Mochila' },
     { label: 'Ecobag', value: 'Ecobag' },
     { label: 'Lixeira carro', value: 'Lixeira carro' },
@@ -111,7 +111,6 @@ function Formulario({ id }) {
   return (
     <Form onSubmit={handleSubmit} id={id}>
 
-      {/* Campo Nome */}
       <Form.Group className="mb-3" controlId="formNome">
         <Form.Label>Nome:</Form.Label>
         <Form.Control
@@ -122,7 +121,6 @@ function Formulario({ id }) {
         />
       </Form.Group>
 
-      {/* Campo Telefone */}
       <Form.Group className="mb-3" controlId="formTelefone">
         <Form.Label>Telefone:</Form.Label>
         <Form.Control
@@ -134,7 +132,6 @@ function Formulario({ id }) {
         />
       </Form.Group>
 
-      {/* Campo Email */}
       <Form.Group className="mb-3" controlId="formEmail">
         <Form.Label>E-mail:</Form.Label>
         <Form.Control
@@ -145,7 +142,6 @@ function Formulario({ id }) {
         />
       </Form.Group>
 
-      {/* Seção de Checkboxes */}
       <Form.Group className="mb-3" controlId="formProdutos">
         <Form.Label>Selecione os itens de interesse:</Form.Label>
         {options.map((option) => (
@@ -162,7 +158,6 @@ function Formulario({ id }) {
         ))}
       </Form.Group>
 
-      {/* Campo Mensagem */}
       <Form.Group className="mb-3" controlId="formMensagem">
         <Form.Label>Mensagem:</Form.Label>
         <Form.Control
@@ -174,7 +169,6 @@ function Formulario({ id }) {
         />
       </Form.Group>
 
-      {/* Botão de Envio */}
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <Button className='button' type="submit"> Enviar </Button>
       </div>
