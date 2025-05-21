@@ -17,6 +17,7 @@ This project was developed using the following technologies:
 
 ## Folder Structure
 * prizoca/
+* ├── .gitattributes
 * ├── .gitignore
 * ├── package-lock.json
 * ├── package.json
@@ -27,6 +28,7 @@ This project was developed using the following technologies:
 * │   ├── favicon.ico
 * │   ├── index.html
 * │   ├── logo.png
+* │   ├── logo_social.png
 * │   ├── manifest.json
 * │   └── robots.txt
 * └── src/
@@ -36,7 +38,8 @@ This project was developed using the following technologies:
 * │   ├── Menu/
 * │   │   └── Menu.js (Navigation menu component)
 * │   ├── Form/
-* │   │   └── Form.js (Contact/order form component)
+* │   │   ├── Form.js (Contact/order form component)
+* │   │   └── Form.css (Form styles)
 * │   ├── LightWidgetEmbed/
 * │   │   └── LightWidgetEmbed.js (Component to embed the Instagram Widget)
 * │   ├── Carousel/
@@ -45,8 +48,11 @@ This project was developed using the following technologies:
 * ├── images/
 * │   └── (Images for Carousel, Main, Header, Footer)
 * ├── index.js (Application entry point)
+* ├── index.css (Application styles)
 * ├── reportWebVitals.js (Performance metrics report)
-* └── setupTests.js (Setup for tests)
+* ├── App.js
+* ├── App.test.js
+* └── App.css
 
 ## How to Run the Project
 
