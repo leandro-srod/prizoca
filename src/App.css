@@ -45,8 +45,9 @@ padding-top: 5px;
   color: white !important;
 }
 
-.offcanvas-link:hover {
-  color: #f8f9fa !important; /* Um branco ligeiramente diferente no hover */
+.offcanvas-link:active {
+  color: #3E1F1E !important;
+  transform: scale(0.90);
   text-decoration: none !important; /* Remover sublinhado padrão no hover */
 }
 
@@ -66,14 +67,14 @@ padding-top: 5px;
 
 .textoSobre{
   color: #3E1F1E;
-   font-size: 16px;
+  font-size: 16px;
   text-align: justify;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .icon {
-  width: 60px; /* Tamanho do ícone */
+  width: 60px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -162,13 +163,13 @@ padding-top: 5px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 100%; /* Garante que o App ocupe pelo menos a altura da tela */
-   scroll-padding-top: 6rem;
+  min-height: 100%;
+  scroll-padding-top: 6rem;
 }
 
 .main{
-  flex-grow: 1; /* Ocupa o espaço restante */
-   margin-top: 0; /* Garante que não haja margem superior extra */
+  flex-grow: 1;
+  margin-top: 0;
 }
 
 .header {
@@ -179,8 +180,8 @@ padding-top: 5px;
   z-index: 1000;
   background-color:#CA3E77;
   padding: 20px 20px; 
-  padding-right: 40px; /* Adiciona 20 pixels de espaço à direita */
-  padding-left: 30px; /* Adiciona 20 pixels de espaço à direita */
+  padding-right: 40px; 
+  padding-left: 30px;
   display: flex; /* Habilita o Flexbox para alinhar os itens */
   align-items: center; /* Alinha os itens verticalmente ao centro */
 
@@ -329,13 +330,13 @@ padding-top: 5px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 100%; /* Garante que o App ocupe pelo menos a altura da tela */
+  min-height: 100%;
   scroll-padding-top: 6rem;
 }
 
 .main{
-  flex-grow: 1; /* Ocupa o espaço restante */
-   margin-top: 0; /* Garante que não haja margem superior extra */
+  flex-grow: 1;
+   margin-top: 0;
 }
 
 .header {
@@ -346,10 +347,10 @@ padding-top: 5px;
   z-index: 1000;
   background-color:#CA3E77;
   padding: 10px 10px; 
-  padding-right: 40px; /* Adiciona 20 pixels de espaço à direita */
-  padding-left: 30px; /* Adiciona 20 pixels de espaço à direita */
-  display: flex; /* Habilita o Flexbox para alinhar os itens */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding-right: 40px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
 
 }
  
@@ -369,7 +370,7 @@ padding-top: 5px;
 }
 
 .menu-cellphone{
-  display: none; /* Ocultar o menu em tablet */
+  display: none;
 }
 
 .link-tablet {
@@ -432,7 +433,6 @@ padding-top: 5px;
 }
 
 .icon-description-item {
- 
   display: flex; /* Flexbox para o ícone e a descrição dentro do item */
   flex-direction: column; /* Ícone acima da descrição */
   align-items: center; /* Centraliza horizontalmente */
@@ -456,8 +456,10 @@ padding-top: 5px;
 }
 
 .form{
-  padding-left:20%;
-  padding-right:20%;
+  
+  align-items: column;
+  padding-left:10%;
+  padding-right:10%;
   padding-bottom:4%;
   text-align: left;
   color: #3E1F1E;

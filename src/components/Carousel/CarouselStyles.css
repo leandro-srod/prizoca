@@ -1,11 +1,11 @@
-/* Estilos mobile-first - cellphone */
+/* Estilos mobile-first - smartphone */
 
 @media (max-width: 575px) {
 
 .carousel { /* Estilos para o container principal do carrossel */
   max-width: 100%;
   margin: 0 auto;
-  height: 250px; /* Defina a altura desejada para o carrossel */
+  height: 250px; 
 }
 
 .carousel-inner {
@@ -83,7 +83,7 @@
 .carousel { /* Estilos para o container principal do carrossel */
   max-width: 100%;
   margin: 0 auto;
-  height: 350px; /* Defina a altura desejada para o carrossel */
+  height: 350px;
 }
 
 .carousel-inner {
@@ -159,7 +159,7 @@
 .carousel { /* Estilos para o container principal do carrossel */
   max-width: 100%;
   margin: 0 auto;
-  height: 90vh; /* Defina a altura desejada para o carrossel */
+  height: 90vh;
 }
 
 .carousel-inner {
@@ -174,7 +174,6 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  /* object-position: top center;  Mantém a parte superior da imagem visível */
 }
 
 .carousel-control-prev,
@@ -213,14 +212,13 @@
 
 .carousel-caption {
   position: absolute;
- 
   left: 0; /* Alinha a legenda à esquerda */
   width: 100%; /* Faz a legenda ter 100% da largura do carrossel */
   height: auto; /* Ajusta a altura automaticamente ao conteúdo */
   background-color: rgba(0, 0, 0, 0.3); /* Cor de fundo semitransparente */
   padding: 15px;
   border-radius: 0; /* Remove qualquer arredondamento de borda */
-  text-align: center; /* Centraliza o texto (opcional) */
+  text-align: center;
 }
 
 .carousel-caption h3 {

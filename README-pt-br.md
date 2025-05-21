@@ -18,6 +18,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 ## Estrutura de Pastas
 * prizoca/
 * ├── .gitignore
+* ├── .gitattributes
 * ├── package-lock.json
 * ├── package.json
 * ├── README-pt-br.md
@@ -27,6 +28,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 * │   ├── favicon.ico
 * │   ├── index.html
 * |   ├── logo.png
+* │   ├── logo_social.png
 * |   ├── manifest.json
 * |   └── robots.txt
 * └── src/
@@ -36,7 +38,8 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 * │   ├── Menu/
 * │   │   └── Menu.js (Componente do menu de navegação)
 * │   ├── Form/
-* │   │   └── Form.js (Componente do formulário de contato/encomenda)
+* │   │   ├──  Form.js (Componente do formulário de contato/encomenda)
+* │   │   └──  Form.css (Estilos do formulario)
 * │   ├── LightWidgetEmbed/
 * │   │   └── LightWidgetEmbed.js (Componente para incorporar o Widget Instagram)
 * │   ├── Carousel/
@@ -45,8 +48,11 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 * ├── images/
 * │   └── (Imagens para o Carrossel, Main, Header, Footer)
 * ├── index.js (Ponto de entrada da aplicação)
+* ├── index.css (Estilos aplicação)
 * ├── reportWebVitals.js (Relatório de métricas de performance)
-* └── setupTests.js (Configuração para testes)
+* ├── App.js
+* ├── App.test.js
+* └── App.css
 
 ## Como Executar o Projeto
 

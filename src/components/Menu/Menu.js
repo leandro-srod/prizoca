@@ -15,14 +15,14 @@ function Menu({ formRef }) { // Recebe a prop formRef
     event.preventDefault();
     event.stopPropagation();
     handleClose(); // Inicia o fechamento do Offcanvas
-    // Role para o formulário APÓS o Offcanvas começar a fechar
+    // Rolagem para o formulário após o Offcanvas começar a fechar
     setTimeout(() => {
       if (formRef && formRef.current) {
         formRef.current.scrollIntoView({ behavior: 'smooth' });
       } else {
         console.log("Referência ao formulário não encontrada!");
       }
-    }, 350); // Ajuste o tempo de acordo com a duração da animação de fechamento do Offcanvas
+    }, 400); // Ajuste de tempo de acordo com a duração da animação de fechamento do Offcanvas
   };
 
   return (
