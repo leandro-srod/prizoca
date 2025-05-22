@@ -13,5 +13,13 @@
 }
 
 .button:active {
-  transform: scale(0.90);
+  transform: scale(0.90); 
+}
+
+.invalid-feedback {
+  color: #FFFFFF;
+}
+
+.was-validated .form-check-input:valid + .form-check-label {
+  color: inherit; 
 }
