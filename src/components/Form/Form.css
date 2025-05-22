@@ -15,3 +15,15 @@
 .button:active {
   transform: scale(0.90); /* Diminui um pouco o tamanho ao pressionar */
 }
+
+.invalid-feedback {
+  color: #FFFFFF; /* Exemplo: Um vermelho mais suave */
+}
+
+
+/* --- Remova a cor verde dos rótulos (Bolsa, Carteira) */
+.was-validated .form-check-input:valid + .form-check-label {
+  color: inherit; /* Volta para a cor padrão do texto */
+}
+
+
